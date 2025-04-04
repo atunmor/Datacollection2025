@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datacollection 2025</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 900px; /* Ajusta el ancho máximo del contenedor */
+            width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        }
+        .button-container {
+            padding: 3rem; /* Aumenta el padding para un diseño más espacioso */
+            border: 2px solid #ddd; /* Borde más visible */
+            border-radius: 16px; /* Bordes más redondeados */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+            background-color: #ffffff; /* Fondo blanco */
+        }
+        .custom-btn {
+            width: 100%;
+            padding: 1.8rem; /* Botones más grandes */
+            font-size: 1.2rem; /* Texto más grande */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .custom-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .btn-production {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-restrictions {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-scrap {
+            background-color: #dc3545;
+            color: white;
+        }
+        .btn-eliminacion {
+            background-color: #ffc107;
+            color: black;
+        }
+    </style>
+</head>
+<body class="d-flex align-items-center">
+    <div class="container">
+        <!-- Título -->
+        <h1 class="text-center mb-4">Datacollection</h1>
+        
+        <!-- Contenedor de botones -->
+        <div class="button-container p-5 border rounded shadow bg-white">
+            <ul class="list-unstyled">
+                <li class="mb-4">
+                    <a href="http://192.168.0.199:8198/Produccion.html" 
+                       class="btn custom-btn btn-production">
+                        Reporte de Producción
+                    </a>
+                </li>
+                <li class="mb-4">
+                    <a href="http://192.168.0.199:8198/ReporteTiempoMuerto.html" 
+                       class="btn custom-btn btn-restrictions">
+                        Reporte de Restricciones
+                    </a>
+                </li>
+                <li>
+                    <a href="http://192.168.0.199:8198/ReporteScrap.html" 
+                       class="btn custom-btn btn-scrap">
+                        Reporte Scrap/PNC
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
